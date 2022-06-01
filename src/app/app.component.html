@@ -1,2 +1,34 @@
 <h8k-navbar header="Color Picker"></h8k-navbar>
 <app-color-picker [colorOptions]="colorOptions" [initialColor]="initialColor"></app-color-picker>
+<br>
+<!-- ============== User List app =============== -->
+<h8k-navbar header="Length Convertor"></h8k-navbar>
+<length-converter></length-converter>
+<br>
+<!-- ============== length convertor ============ -->
+
+<h8k-navbar header="User Lists"></h8k-navbar>
+  <div class="layout-row align-items-center justify-content-center mb-50">
+    <data-form
+      (onItemAdded)="onItemAdded($event)"
+    >
+    </data-form>
+  </div>
+  <div class="layout-row justify-content-around">
+    <div class="layout-column item-list justify-content-center">
+        <h3>Book List</h3>
+        <data-list [dataList]="books" [dataType]="Book" (onItemDelete)="onItemDelete($event)"></data-list>
+    </div>
+    <div class="layout-column item-list justify-content-center">
+        <h3>Song List</h3>
+        <data-list [dataList]="songs" [dataType]="Song" (onItemDelete)="onItemDelete($event)"></data-list>
+    </div>
+  </div>
+<br>
+<!-- ============== Holiday Checker ============= -->
+<!-- api call  -->
+
+<h8k-navbar header="Holiday Checker"></h8k-navbar>
+<div class="layout-column align-items-center">
+  <!-- <holiday-checker [holidayList]="holidayList"></holiday-checker> -->
+</div>

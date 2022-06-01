@@ -8,10 +8,14 @@ import {Component, Input, OnInit} from '@angular/core';
 export class ColorPickerComponent implements OnInit {
   @Input() colorOptions: string[];
   @Input() initialColor: string;
-  selectedColor : string;
+  selectedColor : string = 'black';
 
+  debugger;
   ngOnInit(): void {
   }
 
+  // onChangeColor(color){
+  //   this.selectedColor = color;
+  // }
 
 }
