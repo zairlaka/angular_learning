@@ -1,7 +1,7 @@
 # Color Picker
 
 ## Environment 
-
+- npm install --global @angular/cli@10 
 - Angular CLI Version: 10.0.4
 - Angular Core Version: 10.0.4
 - Node Version: v12 (LTS)
